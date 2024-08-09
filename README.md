@@ -42,13 +42,16 @@
 
 ### 工程结构还原
 
-#### 还原前
-
-<img src="./images/img4.png" width="30%">
-
-#### 还原后
-
-<img src="./images/img5.png" width="30%">
+<div style="display: flex ">
+  <div>
+    <h4>还原前</h4>
+    <img src="./images/img4.png" width="30%">
+  </div>
+  <div>
+    <h4>还原后</h4>
+    <img src="./images/img5.png" width="30%"> 
+  </div>
+</div>
 
 #### 微信开发者工具运行
 
@@ -56,32 +59,33 @@
 
 ### Hook支持版本列表
 
-| 小程序版本    |
-|----------|
-| 9185_x64 |
-| 9129_x64 |
-| 9115_x64 |
-| 8555_x64 |
-| 9105_x64 |
-| 8555_x64 |
-| 9079_x64 |
-| 8531_x64 |
-| 8529_x64 |
-| 8519_x64 |
-| 8501_x64 |
-| 8461_x64 |
-| 8447_x64 |
+| 小程序版本     |
+|-----------|
+| 11159_x64 |
+| 9185_x64  |
+| 9129_x64  |
+| 9115_x64  |
+| 8555_x64  |
+| 9105_x64  |
+| 8555_x64  |
+| 9079_x64  |
+| 8531_x64  |
+| 8529_x64  |
+| 8519_x64  |
+| 8501_x64  |
+| 8461_x64  |
+| 8447_x64  |
 
 #### 如何查看当前运行版本？
 
-<img src="./images/img7.png" width="30%">
-<img src="./images/img8.png" width="30%">
+<div style="display: flex ">
+  <img src="./images/img7.png" width="30%">
+  <img src="./images/img8.png" width="30%">
+</div>
 
 #### 开启小程序F12
 
-> 运行前先启动微信（建议小号，有被封号风险）
-
-**运行✅**
+> **运行前先启动微信（建议小号，有被封号风险）**
 
 ```shell
 <本程序> -hook
@@ -89,7 +93,7 @@
 
 <img src="./images/img9.jpg" width="60%">
 
-### 重新打包运行，可破解小程序
+### 重新打包运行
 
 ```shell
 <本程序> -repack=<输入目录> [-out=<输出目录或文件>] [-watch]
@@ -99,13 +103,10 @@
 
 #### 效果示例
 
-**修改前**
-
-<img src="./images/img11.png" width="30%">
-
-**修改后**
-
-<img src="./images/img12.png" width="30%">
+<div style="display: flex ">
+  <img src="./images/img11.png" width="30%">
+  <img src="./images/img12.png" width="30%">
+</div>
 
 ## 安装
 
@@ -154,7 +155,7 @@
     - 是否清理反编译的中间文件，默认清理
 - `-hook`
     - 是否Hook小程序，动态调试，开启F12，默认不Hook
-    - **注意：目前仅支持Windows**
+    - **注意：目前仅支持Windows，建议小号，有封号风险**
 - `-save`
     - 是否保存解密后的文件，默认不保存
 - `-repack string`
